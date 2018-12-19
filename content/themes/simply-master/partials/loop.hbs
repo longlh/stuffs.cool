@@ -1,0 +1,27 @@
+<div class="u-container">
+    <div class="u-maxWidth1000 u-marginAuto">
+        <div class="row u-paddingTop30">
+            <div class="col s12 col-left">
+                <div class="feed-entry-content u-maxWidth740 u-marginAuto">
+                    <div class="feed-entry-wrap">
+
+                        {{#foreach posts}}
+                            {{>"story/story-card"}}
+
+                            {{!-- ad --}}
+                            {{#has number="5"}}{{> "ad/ad-loop-medium"}}{{/has}}
+                            {{#has number="10"}}{{> "ad/ad-loop-footer"}}{{/has}}
+                        {{/foreach}}
+
+                    </div>
+                </div>
+
+                {{!-- Pagination - partials/pagination.hbs --}}
+                {{"pagination"}}
+            </div>
+
+            {{!-- Sidebar - partials/sidebar/sidebar.hbs --}}
+            {{>"sidebar/sidebar"}}
+        </div>
+    </div>
+</div>
