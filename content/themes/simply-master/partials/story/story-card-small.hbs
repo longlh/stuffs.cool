@@ -7,15 +7,15 @@
 
     <div class="cr-inner u-padding15 u-flexColumnTop">
         <div class="cr-body">
-            {{!-- {{#if primary_tag}}{{#primary_tag}}
+            {{#if primary_tag}}{{#primary_tag}}
             <div class="cr-tag u-fontSizeSmaller u-lineHeight1 u-textUppercase u-fontWeightSemibold">
                 <a href="{{url absolute="true"}}" class="link--underline u-relative zindex4">{{name}}</a>
             </div>
-            {{/primary_tag}}{{/if}} --}}
+            {{/primary_tag}}{{/if}}
 
             <h2 class="cr-t u-contentTitle u-fontSize22 u-overflowHidden"><a href="{{url}}">{{title}}</a></h2>
 
-            {{#unless feature_image}}<p class="cr-e u-textColorNormal">{{excerpt words="20"}}</p>{{/unless}}
+            {{#unless feature_image}}<p class="cr-e u-textColorNormal">{{excerpt words="20"}}...</p>{{/unless}}
         </div>
 
         {{!-- Datetime - ReadingTime - partials/helper/helper-datetime.hbs --}}
